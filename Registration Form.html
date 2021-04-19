@@ -5,30 +5,59 @@
     </head>
     <body>
         <H1>Registration Form</H1>
-            <div>First Name: * <input type ="text"></text>></div>    
-            <div>Last Name: * <input type ="text"></text>></div>    
-            <div>Email Address: * <input type ="text"></text></div>    
-            <div>Password: * <input type="password"></password></div>
-            <div>Confirm Password: * <input type="password"></password></div>    
-            <div>Birthday: <input type="date" name ="DOB"></div>  
-            <div>Gender Identity: <br> <input type="radio" name = "Gender" Value ="male" id ="male">
-                <label for "male">male</label>
-                <input type="radio" name = "Gender" Value ="female" id ="female">
-                <label for "female">female</label>
-                <input type="radio" name = "Gender" Value ="NonBinary" id ="NonBinary">
-                <label for "NonBinary">NonBinary</label>
-                <input type="radio" name = "Gender" Value ="Prefer not to answer" id ="Prefer not to answer">
-                <label for "Prefer not to answer">Prefer not to answer</label></radio></div>   
-            <div>A short description about myself: <br> <textarea></textarea></div> 
-            <div>Favorite Language: <select name="favorite language">
-                <option>Javascript</option>
-                <option>C#</option>
-                <option>HTML</option>
-                <option>Mern</option>
-                <option>Python</option>
-            </select></div>
+        <form action="">
+            <div>
+                <label for="firstname">First Name: * </label> 
+                <input type ="text" name ="firstname" id="firstname"></text>
+            </div>
+            <div>
+                <label for="lasstname">Last Name: * </label> 
+                <input type ="text" name ="lastname" id="lastname"></text>
+            </div>   
+            <div>
+                <label for ="Email">Email Address: * </label>
+                <input type ="email" name ="email" id="email"></email>
+            </div>    
+            <div>
+                <label for ="password">Password: * </label>
+                <input type="password" name ="password" id="password"></password>
+            </div>
+            <div>
+                <label for ="Cpassword">Confirm Password: * </label>
+                <input type="password" name ="Cpassword" id="Cpassword"></password>
+            </div>    
+            <div>
+                <label for ="DOB">Birthday: </label>
+                <input type="date" name ="DOB" id=DOB>
+            </div>  
+            <div>
+                <label for ="Gender Identity">Gender Identity: </label><br> 
+                <input type="radio" name = "male" Value ="1" id ="male">
+                    <label for "male">male</label>
+                    <input type="radio" name = "female" Value ="2" id ="female">
+                    <label for "female">female</label>
+                    <input type="radio" name = "NonBinary" Value ="3" id ="NonBinary">
+                    <label for "NonBinary">NonBinary</label>
+                    <input type="radio" name = "Prefer not to answer" Value ="4" id ="Prefer not to answer">
+                    <label for "Prefer not to answer">Prefer not to answer</label>
+                </radio>
+            </div>   
+            <div>
+                <label for ="Description">A short description about myself: </label><br> 
+                <textarea></textarea>
+            </div> 
+            <div><label for="language">Favorite Language: </label>
+                <select name="favorite language">
+                    <option value="1">Javascript</option>
+                    <option value="2">C#</option>
+                    <option value="3">HTML</option>
+                    <option value="4">Mern</option>
+                    <option value="5">Python</option>
+                </select>
+            </div>
             <div><input type="checkbox"> Yes, I would like to receive periodic email updates</div>
             <div><input type="submit" value="Create Account"> </div>
             <div>* indicates a required field</div>
+        </form>
     </body>
 </html>
