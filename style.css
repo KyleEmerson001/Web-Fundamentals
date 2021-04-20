@@ -1,0 +1,21 @@
+h1{
+    background-color: black;
+    color:white;
+    font-family:cursive;
+}
+span{
+    color:rgb(103, 115, 221);
+    font-family:sans-serif;
+    font-weight:lighter;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    background-color: rebeccapurple;
+    color: white;
+}
+h3{
+    text-align: right;
+    text-decoration: underline;
+    background-color: rgb(130, 163, 226);
+}
