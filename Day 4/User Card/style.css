@@ -5,7 +5,7 @@ body{
     padding: 20px 0px;
 }
 .card {
-    border:solid 1px;
+    border:solid 2px grey;
     width: 500px;
 }
 .card img{
@@ -21,6 +21,25 @@ body{
     top: 35px;
     border-radius: 50%;
     filter: invert(100%);
+    border: 3px solid white;
+    z-index: 3;
+}
+#white-background{
+    position: relative;
+    top: 38px;
+    right: 140px;
+    border-radius: 50%;
+    border: 5px solid black;
+    z-index: 2;
+}
+#grey-background{
+    position: relative;
+    top: 39px;
+    right: 69px;
+    filter:none;
+    border-radius: 50%;
+    border: 6px solid grey;
+    z-index: 1;
 }
 .white{
     background-color: white;
