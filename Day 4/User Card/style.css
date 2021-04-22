@@ -1,0 +1,28 @@
+.card {
+    border:solid 1px;
+    width: 500px;
+
+}
+.card img{
+    height: 60px;
+    width: 60px;
+}
+.green{
+    background-color: rgb(10, 132, 153);
+    padding:  10px 20px;
+}
+.green img{
+    position: relative;
+    top: 40px;
+    border-radius: 50%;
+    filter: invert(100%);
+}
+.white{
+    background-color: white;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.white img{
+    height: 15px;
+    width: auto;
+}
