@@ -5,7 +5,7 @@ body{
     padding: 20px 0px;
 }
 .card {
-    border:solid 2px grey;
+
     width: 500px;
 }
 .card img{
@@ -45,6 +45,7 @@ body{
     background-color: white;
     padding: 0px 20px;
     font-weight: bold;
+    border:solid 2px grey;
 }
 .white img{
     height: 15px;

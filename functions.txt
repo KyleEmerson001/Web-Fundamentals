@@ -1,0 +1,9 @@
+function reverse(arr) {
+    for(var left=0; left<arr.length/2; left++) {
+        var right = arr.length-1-left;
+        if(arr[left] != arr[right]) {
+            return arr[right] ;
+        }
+    }
+    var array=[a,b,c,d,e]
+    console.log reverse(array)
