@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+h1{
+    text-align: center;
+    color:red
+}
+video{
+    height: 500px;
+}

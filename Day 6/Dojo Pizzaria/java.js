@@ -12,5 +12,5 @@ var p2= pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms
 console.log(p2)
 var p3= pizzaOven("thin and crispy", "barbeque", ["mozzarella"], ["bacon", "ham", "pineapple"]);
 console.log(p3)
-var p4= pizzaOven("hand tossed", "marinara", ["mozzarella", "cheddar"], ["bacon", "pepperoni", "sausage"])
+var p4= pizzaOven("hand tossed", "marinara", ["mozzarella", "cheddar"], ["bacon", "pepperoni", "sausage"]);
 console.log(p4)
