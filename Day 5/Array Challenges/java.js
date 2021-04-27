@@ -34,7 +34,9 @@ console.log(result); // we expect back 4
 function fibonacciArray(n) {
     // the [0, 1] are the starting values of the array to calculate the rest from
     var fibArr = [0, 1];
-    // your code here
+    for (let i =2; i<n; i++){
+        fibArr.push(fibArr[i-2]+ fibArr[i-1])
+    }
     return fibArr;
 }
    
