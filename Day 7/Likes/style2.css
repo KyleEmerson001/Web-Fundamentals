@@ -1,0 +1,64 @@
+.head{
+    text-align: center;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+}
+.nav-title{
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    text-align: center;
+    background-color:black;
+    color: white;
+}
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.section1{
+    justify-content: flex-end;
+}
+.section2{
+    justify-content: flex-start;
+}
+.white{
+    border:solid 2px grey;
+    background-color: white;
+    font-weight: bold;
+    padding: 0px 10px;
+    margin:0px 20px;
+    align-items: center;
+    text-align: center;
+}
+.white img{
+    height: 60px;
+    width: auto;
+    margin: 20px;
+}
+.likes-card{
+    border:black solid 1px;
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.likes-card h2{
+    margin-right: 100px;
+}
+.likes-card p{
+    margin-left: 20px;
+}
+.likes-card .top{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    vertical-align: text-bottom;
+    align-items: center;
+}
+.likes-card .top button{
+    height: 20px;
+    vertical-align: text-bottom;
+    background-color: rgb(188, 248, 68);
+}

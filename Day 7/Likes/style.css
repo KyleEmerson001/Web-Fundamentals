@@ -1,0 +1,19 @@
+.container{
+    border:black solid 1px;
+    width: 350px;
+}
+h2{
+    margin-right: 60px;
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    vertical-align: text-bottom;
+    align-items: center;
+}
+.top button{
+    height: 20px;
+    vertical-align: text-bottom;
+    background-color: rgb(188, 248, 68);
+}
