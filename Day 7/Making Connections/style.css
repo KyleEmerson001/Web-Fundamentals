@@ -1,0 +1,168 @@
+.nav{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color: white;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    margin: 10px;
+    min-block-size: 0px 60px;
+}
+.nav-links a {
+    color:lightgrey;
+    text-decoration: none;
+    margin: 10px;
+}
+#active {
+    color: white;
+}
+.button{
+    justify-content: space-between;
+    align-content: center;
+}
+.button button{
+    background-color: rgb(23, 172, 172);
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 2px 2px black;
+    border-style: solid;
+    border-color: black;
+    max-width:100px;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+}
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.section1{
+    justify-content: flex-end;
+}
+.section2{
+    justify-content: flex-start;
+}
+.card {
+    min-width: 300px;
+    max-width: 500px;
+    margin:20px;
+}
+.card img{
+    height: 60px;
+    width: 60px;
+}
+.green{
+    background-color: rgb(10, 132, 153);
+    padding:  5px 20px;
+}
+.green img{
+    position: relative;
+    top: 35px;
+    border-radius: 50%;
+    filter: invert(100%);
+    border: 3px solid white;
+    z-index: 3;
+}
+#white-background{
+    position: relative;
+    top: 38px;
+    right: 140px;
+    border-radius: 50%;
+    border: 5px solid black;
+    z-index: 2;
+}
+#grey-background{
+    position: relative;
+    top: 39px;
+    right: 69px;
+    filter:none;
+    border-radius: 50%;
+    border: 6px solid grey;
+    z-index: 1;
+}
+.white{
+    border:solid 2px grey;
+    background-color: white;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.white img{
+    height: 15px;
+    width: auto;
+    margin: 0px 5px 0px 0px;
+}
+.white p {
+    position: relative;
+    bottom:15px;
+}
+.sidebar{
+    min-width: 300px;
+    max-width: 500px;
+    margin:20px;
+}
+.sidebar p{
+    font-size: 1.5em;
+}
+.grey{
+    background-color: darkslategray;
+    color:white;
+    display: flex;
+    align-content: center;
+}
+.grey h3{
+    margin:20px;
+}
+.greywhite{
+    border:solid 2px grey;
+    background-color: white;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.greywhite img{
+    height: 35px;
+    width: auto;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 0px 5px;
+}
+.greywhite button{
+    margin: 0px 10px 0px 0px;
+}
+.small-margins{
+    margin: 5px 0px;
+}
+#lightgrey{
+    color:lightgrey
+}
+#accept{
+    float:right;
+}
+#close{
+    float:right;
+}
+#box-1 {
+    border-radius: 50%;
+    background-color: grey;
+    font-weight:bold;
+}
+#box-2{
+    border-radius: 17px;
+    background-color: grey;
+    color: white;
+}
+.clear{
+    opacity: 0;
+}

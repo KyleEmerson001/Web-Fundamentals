@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Making Connections</title>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <div class="button"><button class="btn">Sign Out</button></div>
+        
+        
+    </div>
+    <div class="main">
+        <div class="section1">
+            <div class="card">
+                <div class="green">
+                    <img src="user-circle.png"><img id="grey-background" src="user-circle.png"><img id="white-background" src="user-circle.png">
+                </div> 
+                <div class="white">
+                        <h1 id="name">Jane Doe</h1>
+                        <p><img src="map-marker.png"> Seattle</p>
+                        <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                        <p><img src="gear.png"><a href="https://github.com/KyleEmerson001/Web-Fundamentals/blob/master/Day%204/User%20Card/index.html">edit profile</a></p>  
+                </div>
+            </div>
+            <div class="card">
+                <div class="grey">
+                    <h3>Education</h3>
+                </div> 
+                <div class="white">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p id="lightgrey">December 2019 - Mar 2020</p>
+                    <p>Triple Blackbelt in Python, Mern, C#...</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="sidebar">
+                <div class="grey">
+                    <h3><button id= "box-1">2</button> Connection Requests</h3>
+                </div> 
+                <div class="greywhite">
+                    <p><img src="todd-s.jpg" alt="Todd E"> Todd E<img id= "close" src="close-circle.png" alt="close circle" onclick="changeNumber()"><img id="accept" src="accept-circle.png" alt="accept circle" onclick="changeNumber()"></p>
+                    <p><img src="phil-s.jpg" alt="Phil K"> Phil K<img id= "close" src="close-circle.png" alt="close circle"onclick="changeNumber()"><img id="accept" src="accept-circle.png" alt="accept circle"onclick="changeNumber()"></p>   
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="grey">
+                    <h3><button id= "box-2"> 500</button>Your Connections</h3>
+                </div> 
+                <div class="greywhite">
+                    <p><img src="adrien-s.jpg" alt="Adrien D"> Adrien D</p>
+                    <p><img src="anne-s.jpg" alt="Anne J"> Anne J</p>
+                    <p><img src="alayne-s.jpg" alt="Alayne T"> Alayne T</p>
+                    <p><img src="arry-s.jpg" alt="Arry Y"> Arry Y</p>    
+                </div>
+                <div class="greywhite">
+                    <p class= "small-margins"><a href="https://github.com/KyleEmerson001/Web-Fundamentals/blob/master/Day%204/User%20Card/index.html">View More</a></p>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
