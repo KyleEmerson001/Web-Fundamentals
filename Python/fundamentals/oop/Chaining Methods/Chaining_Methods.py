@@ -20,6 +20,7 @@ class User():
     def print_info(self):
         print(f"name: {self.name}")
         print(f"balance: {self.account_balance}")
+        return self
 
 
 Naruto = User("Naruto Uzumaki")
