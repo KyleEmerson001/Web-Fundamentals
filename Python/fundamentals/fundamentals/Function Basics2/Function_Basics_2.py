@@ -22,10 +22,26 @@ def first_plus_length():
 print(first_plus_length())
 
 # 4 values greater than second
-list = [1,2,3,4,2,5,1]
-new_list = []
-def values_greater_than_second():
-    for num in range(len(list))
-    
+list1 = [1,2,3,5,6,2,1]
+greater_than = list1[1]
+length = len(list1)
+def values_greater_than_second(list):
+    if length < 2:
+        return False
+    new_list = []
+    for i in list:
+        if i > greater_than:
+            new_list.append(i)
+    print(len(new_list))
+    return new_list
+print(values_greater_than_second(list1))
+
+
 
 #5 this length, that value
+def length_and_value(length, value):
+    list1 = []
+    for i in range(length):
+        list1.append(value)
+    return list1
+print(length_and_value(5,6))
