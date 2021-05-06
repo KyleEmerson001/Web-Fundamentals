@@ -2,6 +2,10 @@ def class_grades():
     students = []
     number_of_inputs = 0
     number_of_students = input("How many students do you have? ")
+    if input != int:
+
+        number_of_students = input("How many students do you have? ")
+
     while int(number_of_inputs) < int(number_of_students):
         student_name = input("Student's name: ")
         student_grade = input("Student's grade: ")
