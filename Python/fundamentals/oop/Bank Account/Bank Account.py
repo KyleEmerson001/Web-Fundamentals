@@ -44,7 +44,7 @@ class BankAccount:
         print(f"User: {self.name}, Balance: {self.account_balance}")
         return self
     def yield_interest(self):
-        self.account_balance *= amount
+        self.account_balance *= int_rate
         self.display_user_balance()
         return self
 
