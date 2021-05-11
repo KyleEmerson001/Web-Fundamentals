@@ -1,17 +1,29 @@
 from flask import Flask
 app = Flask(__name__)
 @app.route("/")
-def success():
+def hello():
     return "Hello World!"
 @app.route('/dojo')
-def success():
+def dojo():
     return "Dojo!"
-@app.route("/<sting:name>")
-def success():
+@app.route("/say <sting:name>")
+def hi():
     return "Hi + name"
-@app.route('/int')
+@app.route('/hello')
 def success():
-    return "Hi Flask!"
+    for i in range(0,35)
+        print(i)
+    return "hello"
+@app.route('/bye')
+def success():
+    for i in range(0,80)
+        print(i)
+    return "bye"  
+@app.route('/dogs')
+def success():
+    for i in range(0,99)
+        print(i)
+    return "dogs"  
 
 
 if __name__ =="__main__":
