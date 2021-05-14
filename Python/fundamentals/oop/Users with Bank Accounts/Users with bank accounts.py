@@ -22,7 +22,7 @@ class BankAccount():
         print(f"your intrest was {amount}")
         return self
     def print_info(self):
-        print(f"name: {selfccountNumber}")
+        print(f"name: {self.countNumber}")
         print(f"balance: {self.account_balance}")
         return self
 
