@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML Table</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+
+        </head>
+        <body>
+                        <h1>Users</h1>
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Full Name</td>
+                    </tr>
+                    {% for user in users %}
+                    <tr>
+                            <td>{{ user['first_name'] }} </td>
+                            <td>{{ user['last_name'] }}</td>
+                            <td>{{ user['first_name'] }} {{ user['last_name'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+        </body>
+
+</html>
