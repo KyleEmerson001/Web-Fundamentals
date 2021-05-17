@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Checkerboard</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+
+
+        </head>
+        <body>
+                <h1>Welcome</h1>
+                <table>
+                    {% for i in range(repeat): %}
+                    <tr>
+                        {% for j in range (repeat): %}
+                        <td class = 'box{{ (i+j)%2 +1}}'></td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </table>
+        </body>
+
+</html>

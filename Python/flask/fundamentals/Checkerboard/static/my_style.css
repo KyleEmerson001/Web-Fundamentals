@@ -1,0 +1,20 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+body{
+    background-color: blue;
+}
+h1 {
+    text-align: center;
+} 
+.box1{
+    background-color:black;
+    height: 40px;
+    width: 40px;
+}
+.box2{
+    background-color:white;
+    height: 40px;
+    width: 40px;
+}
