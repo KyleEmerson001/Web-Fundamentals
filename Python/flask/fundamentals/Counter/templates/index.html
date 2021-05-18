@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+
+        </head>
+        <body>
+            <h1>You have visited the site:</h1>
+            <h1> {{session["count"]}} times</h1>
+
+        </body>
+
+</html>
