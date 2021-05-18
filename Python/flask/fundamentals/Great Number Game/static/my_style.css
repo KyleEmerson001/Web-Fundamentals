@@ -3,7 +3,7 @@ body{
     align-content: center;
     text-align: center;
 }
-.hintbox{
+.box{
 
     display: inline-block;
     border: solid black 2px;
