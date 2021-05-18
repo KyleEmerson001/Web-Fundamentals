@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+
+        </head>
+        <body>
+            <h1>Welcome to the Great Number Game!</h1>
+            <h2>I am thinking of a number between 1 and 100</h2>
+            <h2>Take a guess</h2>
+            <div class="hintbox" id = "{{box_color}}">
+                <h2>{{input_value}}{{box_text}}</h2>
+            </div>
+            <div class="formbox">
+
+                   <form action="/check" method="post">
+                       <div>
+                            <div class = "guess">
+                                <input type="text" class="form-control" name="input_guess">
+                            </div>
+                           <button type="submit" value="Submit">Submit</button>
+                         </div>  
+           
+                    </form>
+            </div>
+            
+   
+         
+   
+        </body>
+    </html>

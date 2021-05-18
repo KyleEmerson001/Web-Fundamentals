@@ -1,0 +1,26 @@
+body{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+.hintbox{
+
+    display: inline-block;
+    border: solid black 2px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+#red{
+    color: white;
+    background-color: red;
+}
+#green{
+    color: white;
+    background-color: green;
+}
+.guess{
+    margin: 10px;
+}
