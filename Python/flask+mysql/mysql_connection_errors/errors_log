@@ -1,0 +1,18 @@
+entered in the wrong password
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+entered in the wrong username
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+changed cursor class
+TypeError: 'module' object is not callable
+changed charset
+AttributeError: 'NoneType' object has no attribute 'encoding'
+removed b from db
+NameError: name 'd' is not defined
+mispelled host in connection
+TypeError: __init__() got an unexpected keyword argument 'hos'
+Added a colon after connection
+SyntaxError: invalid syntax
+mispelled import
+SyntaxError: invalid syntax
+removed b from db in final return statment
+NameError: name 'd' is not defined
