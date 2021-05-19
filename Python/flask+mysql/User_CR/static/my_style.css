@@ -1,0 +1,15 @@
+table{ 
+    display: inline-block;
+    border: solid black 1px;
+}
+td {
+    border: solid black 1px;
+}
+th {
+    border: solid black 1px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    
+}
