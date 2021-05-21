@@ -33,7 +33,7 @@ def login_user():
     list_of_users = User.get_one_email(request.form['email'])
     if len(list_of_users) == 0:
         print("email not found")
-        flash("invalid credentials")
+        flash("Invalid credentials")
         return redirect('/')
     else:
         print('email found')
