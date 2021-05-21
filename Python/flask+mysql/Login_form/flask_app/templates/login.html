@@ -15,7 +15,7 @@
     <div class="content">
         <div class="reg">
             <h2>Registration</h2>
-            <form action = "/user/create" method ="post">
+            <form action = "/users/create" method ="post">
                 <fieldset>
                     <legend>
                         <label for ="first_name">First Name</label>
@@ -50,32 +50,7 @@
             </form>
         </div>
         <div class="errors">
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for msg in messages %}
-                    <p>{{msg}}</p>
-                {% endfor %}
-            {% endif %}    
-            {% endwith %}
+
         </div>
-        <div class="login">
-            <h2>Login</h2>
-            <form action="/user/login" method="post">
-                <fieldset>
-                    <legend>
-                        <label for ="email">Email</label>
-                    </legend>
-                    <input type="text" name ="email">
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        <label for ="pw">Password</label>
-                    </legend>
-                    <input type="password" name ="pw">
-                </fieldset>
-                <button>login</button>
-            </form>
-        </div>
-    </div>
 </body>
 </html>
