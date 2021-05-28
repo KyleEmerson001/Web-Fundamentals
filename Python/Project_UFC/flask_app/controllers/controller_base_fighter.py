@@ -1,0 +1,27 @@
+from flask_app import app
+from flask import render_template, redirect, request, session
+from flask_app.models.model_base_fighter import base_fighter
+
+
+# This is a ACTION route
+@app.route('/base_fighter/<int:base_fighter_id>/update',  methods=['POST'])
+def create_my_fighter():
+
+    base_fighter_id = base_fighter.update_one(request.form)
+
+
+    return redirect('/')
+
+@app.route('/base_fighter/<int:base_fighter_id>/view')
+def view_base_fighter(base_fighter_id):
+    # get TV
+    context = {
+        "base_fighter": base_fighter.get_one(base_fighter_id)
+    }
+    # render
+    return render_template('view_one_base_fighter.html', **context)
+
+@app.route('/TV/<int:tv_shows_id>/delete')
+def delete_TV(tv_shows_id):
+    base_fighter.delete_one(tv_shows_id)
+    return redirect('/')
