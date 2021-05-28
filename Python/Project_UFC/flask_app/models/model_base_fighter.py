@@ -19,6 +19,23 @@ class base_fighter:
 
 # C
     @classmethod
+    def create_one(cls, info):
+        query = 'insert into ufc.my_ufc_fighters (first_name, last_name, strength, accuracy, age, td_defense, td_offense, Base_UFC_Fighters_id, Users_id) VALUES (%(first_name)s, %(last_name)s, %(strength)s, %(accuracy)s, %(age)s, %(td_defense)s, %(td_offense)s, %(Base_UFC_Fighters_id)s, %(Users_id)s)'
+        data = {
+            "first_name": info['first_name'],
+            "last_name": info['last_name'],
+            "strength": info['strength'],
+            "accuracy": info['accuracy'],
+            "age": info['age'],
+            "td_offense": info['td_offense'],
+            "td_defense": info['td_defense'],
+            "Base_UFC_Fighters_id": info['Base_UFC_Fighters_id'],
+            "Users_id": session['uuid']
+        }
+        base_fighter_id = connectToMySQL(db).query_db(query, data)
+        return base_fighter_id
+
+    @classmethod
     def get_all(cls):
         query = 'SELECT * FROM base_ufc_fighters'
 
@@ -38,20 +55,5 @@ class base_fighter:
         }
         return connectToMySQL(db).query_db(query, data)[0]
 # U
-    @classmethod
-    def update_one(cls, info):
-        query = 'insert into ufc.my_ufc_fighters (first_name, last_name, strength, accuracy, age, td_defense, td_offense, Base_UFC_Fighters_id, Users_id) values (%(first_name)s, %(last_name)s, %(strength)s, %(accuracy)s, %(age)s, %(td_defense)s, %(td_offense)s, %(Base_UFC_Fighters_id)s, %(Users_id)s)'
-        data = {
-            "first_name": info['first_name'],
-            "last_name": info['last_name'],
-            "strength": info['strength'],
-            "accuracy": info['accuracy'],
-            "age": info['age'],
-            "td_offense": info['td_offense'],
-            "td_defense": info['td_defense'],
-            "Base_UFC_Fighters_id": info['Base_UFC_Fighters_id'],
-            "Users_id": session['uuid']
-        }
-        base_fighter_id = connectToMySQL(db).query_db(query, data)
-        return base_fighter_id
+
 
