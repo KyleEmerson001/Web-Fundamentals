@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Buy or Fight</title>
+</head>
+
+<body>
+    <div class="title">
+        <span></span>
+        <h1>The Recruits</h1>
+        <a href="/"><button>Go Home</button></a>
+        <a href="/user/exit"><button>Logout</button></a>
+    </div>
+    <div class="content">
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Strength</th>
+                <th>Accuracy</th>
+                <th>Take Down Defense</th>
+                <th>Take Down Offense</th>
+                <th>Price</th>
+            </thead>
+            <tbody>
+                {% for base_fighter in all_fighter %}
+                <tr>
+                    <td>{{base_fighter.first_name}}</td>
+                    <td>{{base_fighter.last_name}}</td>
+                    <td>{{base_fighter.age}}</td>
+                    <td>{{base_fighter.strength}}</td>
+                    <td>{{base_fighter.accuracy}}</td>
+                    <td>{{base_fighter.td_offense}}</td>
+                    <td>{{base_fighter.td_defense}}</td>
+                    <td>{{base_fighter.price}}</td>
+                    <td>
+                        <a href="/base_fighter/{{base_fighter.id}}/view">View</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

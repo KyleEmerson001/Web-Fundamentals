@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span></span>
+        <h1>{{fighter.first_name}} {{fighter.last_name}}</h1>
+        <a href="/"><button>Go Home</button></a>
+        <a href="/user/exit"><button>Logout</button></a>
+        <a href="fighter/view"><button>Return to your Fighters</button></a>
+    </div>
+    <div class="content">
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Strength</th>
+                <th>Accuracy</th>
+                <th>Age</th>
+                <th>Take Down Defense</th>
+                <th>Take Down Offense</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{fighter.first_name}}</td>
+                    <td>{{fighter.last_name}}</td>
+                    <td>{{fighter.age}}</td>
+                    <td>{{fighter.strength}}</td>
+                    <td>{{fighter.accuracy}}</td>
+                    <td>{{fighter.td_offense}}</td>
+                    <td>{{fighter.td_defense}}</td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
