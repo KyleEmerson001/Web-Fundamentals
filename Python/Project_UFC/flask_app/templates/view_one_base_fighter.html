@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <span></span>
+        <h1>{{base_fighter.first_name}} {{base_fighter.last_name}}</h1>
+        <a href="/"><button>Go Home</button></a>
+        <a href="/user/exit"><button>Logout</button></a>
+        <a href="fighter/view_base"><button>Return to Opponents</button></a>
+    </div>
+    <div class="content">
+        <form action="/base_fighter/{{base_fighter.id}}/update" method="POST">
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Strength</th>
+                <th>Accuracy</th>
+                <th>Age</th>
+                <th>Take Down Defense</th>
+                <th>Take Down Offense</th>
+                <th>Price</th>
+            </thead>
+            <tbody></tbody>
+            <tr>
+                <td name ="first_name">{{base_fighter.first_name}}</td>
+                <td name ="last_name">{{base_fighter.last_name}}</td>
+                <td name ="age">{{base_fighter.age}}</td>
+                <td name ="strength">{{base_fighter.strength}}</td>
+                <td name ="accuracy">{{base_fighter.accuracy}}</td>
+                <td name ="td_offense">{{base_fighter.td_offense}}</td>
+                <td name ="td_defense">{{base_fighter.td_defense}}</td>
+                <td name ="price">{{base_fighter.price}}</td>
+                <td name ="Base_UFC_Fighters_id">{{base_fighter.id}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <button>buy</button>
+        </form>
+    </div>
+</body>
+
+</html>

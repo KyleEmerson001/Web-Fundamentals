@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(red, black, red, black, red);
+    color: white
+  }
+.content{
+    display:flex;
+    justify-content: space-evenly;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: solid whitesmoke 1px;
+}
+th{
+    padding: 0px 20px;
+}
+td{
+    border: solid whitesmoke 1px;
+}
