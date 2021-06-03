@@ -2,16 +2,22 @@ body {
     background-image: linear-gradient(red, black, red, black, red);
     color: white
   }
+  img{
+      max-height: 400px;
+      max-width: 400px;
+  }
 .content{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .title{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 table{
+    color: white;
     border: solid whitesmoke 1px;
+    background-color: black;
 }
 th{
     padding: 0px 20px;

@@ -30,11 +30,19 @@ def create_my_fighter():
 @app.route('/base_fighter/<int:base_fighter_id>/view')
 def view_base_fighter(base_fighter_id):
     # get TV
+    base_fighter_one= base_fighter.get_one(base_fighter_id)
+    image_url = f"images/{base_fighter_one['last_name']}.jpg"
     context = {
-        "base_fighter": base_fighter.get_one(base_fighter_id)
+        "base_fighter": base_fighter_one,
+        "image_url": image_url
     }
     # render
     return render_template('view_one_base_fighter.html', **context)
+    # context = {
+    #     "base_fighter": base_fighter.get_one(base_fighter_id)
+    # }
+    # # render
+    # return render_template('view_one_base_fighter.html', **context)
 
 @app.route('/TV/<int:tv_shows_id>/delete')
 def delete_TV(tv_shows_id):

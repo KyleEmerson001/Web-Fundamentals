@@ -22,8 +22,11 @@ def view_fighters():
 @app.route('/fighter/<int:fighter_id>/view')
 def view_fighter(fighter_id):
     # get TV
+    fighter_one= fighter.get_one(fighter_id)
+    image_url = f"images/{fighter_one['last_name']}.jpg"
     context = {
-        "fighter": fighter.get_one(fighter_id)
+        "fighter": fighter_one,
+        "image_url": image_url
     }
     # render
     return render_template('view_one_fighter.html', **context)

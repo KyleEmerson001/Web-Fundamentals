@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="title">
-        <h1>Howdy {{logged_in_user['first_name']}}</h1>
+        <h1>Welcome {{logged_in_user['first_name']}}</h1>
+        <h1>Let's Get Ready to Rumble</h1>
         <a href="/user/exit"><button>Logout</button></a>
     </div>
-    <h1>All Your Fighters</h1>
+    <h1>Your Fighting Stable</h1>
         <div>
         <table>
             <thead>
@@ -42,7 +43,7 @@
             </tbody>
         </table>
         </div>
-        <a href="fighter/view">View Fighters</a>
-        <a href="fighter/view_base">Buy New Fighters</a>
+        <a href="fighter/view"><button>View Fighters</button></a>
+        <a href="fighter/view_base"><button>Buy New Fighters</button></a>
 </body>
 </html>

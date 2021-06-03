@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,26 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <title>Document</title>
 </head>
+
 <body>
     <div class="title">
         <span></span>
         <h1>{{fighter.first_name}} {{fighter.last_name}}</h1>
-        <a href="/"><button>Go Home</button></a>
-        <a href="/user/exit"><button>Logout</button></a>
-        <a href="fighter/view"><button>Return to your Fighters</button></a>
+        <div>
+            <a href="/"><button>Go Home</button></a>
+            <a href="/user/exit"><button>Logout</button></a>
+            <a href="/fighter/view"><button>Return to your Fighters</button></a>
+        </div>
     </div>
     <div class="content">
+        <img src="{{url_for('static', filename=image_url)}}">
         <table>
             <thead>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th>Age</th>
                 <th>Strength</th>
                 <th>Accuracy</th>
-                <th>Age</th>
                 <th>Take Down Defense</th>
                 <th>Take Down Offense</th>
             </thead>
@@ -42,4 +47,5 @@
         </table>
     </div>
 </body>
+
 </html>

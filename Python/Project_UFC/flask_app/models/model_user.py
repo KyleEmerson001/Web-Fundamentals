@@ -85,4 +85,3 @@ class User:
             flash("passwords don't match")
 
         return is_valid
-        

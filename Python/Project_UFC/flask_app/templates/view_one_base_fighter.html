@@ -13,30 +13,42 @@
     <div class="title">
         <span></span>
         <h1>{{base_fighter.first_name}} {{base_fighter.last_name}}</h1>
-        <a href="/"><button>Go Home</button></a>
-        <a href="/user/exit"><button>Logout</button></a>
-        <a href="fighter/view_base"><button>Return to Opponents</button></a>
+        <div>
+            <a href="/"><button>Go Home</button></a>
+            <a href="/user/exit"><button>Logout</button></a>
+            <a href="/fighter/view_base"><button>Return to the Recruits</button></a>
+        </div>
     </div>
     <div class="content">
-        <p name="first_name">{{base_fighter.first_name}}</p>
-        <p name="last_name">{{base_fighter.last_name}}</p>
-        <p name="age">{{base_fighter.age}}</p>
-        <p name="strength">{{base_fighter.strength}}</p>
-        <p name="accuracy">{{base_fighter.accuracy}}</p>
-        <p name="td_offense">{{base_fighter.td_offense}}</p>
-        <p name="td_defense">{{base_fighter.td_defense}}</p>
-        <p name="price">{{base_fighter.price}}</p>
-        <p name="Base_UFC_Fighters_id">{{base_fighter.id}}</p>
+        <img src="{{url_for('static', filename=image_url)}}">
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Strength</th>
+                <th>Accuracy</th>
+                <th>Age</th>
+                <th>Take Down Defense</th>
+                <th>Take Down Offense</th>
+                <th>Price</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{base_fighter.first_name}}</td>
+                    <td>{{base_fighter.last_name}}</td>
+                    <td>{{base_fighter.age}}</td>
+                    <td>{{base_fighter.strength}}</td>
+                    <td>{{base_fighter.accuracy}}</td>
+                    <td>{{base_fighter.td_offense}}</td>
+                    <td>{{base_fighter.td_defense}}</td>
+                    <td>{{base_fighter.price}}</td>
+                </tr>
+            </tbody>
+        </table>
         <form action="/base_fighter/update" method="post">
-            <input type="hidden" name = "Base_UFC_Fighters_id" value ="{{base_fighter.id}}">
-            <button>update</button>
+            <input type="hidden" name="Base_UFC_Fighters_id" value="{{base_fighter.id}}">
+            <button>Buy</button>
         </form>
-        <!-- <form action="/base_fighter/update" method="POST">
-            
-
-
-            <button>buy</button>
-        </form> -->
     </div>
 </body>
 
