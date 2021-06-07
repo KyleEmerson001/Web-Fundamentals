@@ -1,0 +1,16 @@
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.exe
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.deps.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.dev.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\bin\Debug\net5.0\FirstCSharp.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csprojAssemblyReference.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.genruntimeconfig.cache
