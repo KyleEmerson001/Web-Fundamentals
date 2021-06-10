@@ -76,6 +76,20 @@
         return this;
     }
   
+    insertAtFront(data) {
+      
+    }
+
+    /**
+     * Removes the first node of this list.
+     * - Time: (?).
+     * - Space: (?).
+     * @returns {any} The data from the removed node.
+     */
+    removeHead() {
+
+    }
+  }
     /**
      * Calls insertAtBack on each item of the given array.
      * - Time: O(n * m) n = list length, m = arr.length.

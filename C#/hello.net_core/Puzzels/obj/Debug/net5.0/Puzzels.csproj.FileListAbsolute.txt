@@ -1,0 +1,16 @@
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.csprojAssemblyReference.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.AssemblyInfoInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.AssemblyInfo.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.csproj.CoreCompileInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.exe
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.deps.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.runtimeconfig.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.runtimeconfig.dev.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\ref\Puzzels.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\bin\Debug\net5.0\Puzzels.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\ref\Puzzels.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\Puzzels\obj\Debug\net5.0\Puzzels.genruntimeconfig.cache
