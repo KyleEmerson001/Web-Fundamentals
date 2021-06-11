@@ -1,40 +1,28 @@
-﻿class Human
+﻿using System;
+
+namespace WizardNinjaSamurai
 {
-    public string Name;
-    public int Strength;
-    public int Intelligence;
-    public int Dexterity;
-    private int health;
-     
-    public int Health
+    class Program
     {
-        get { return health; }
+        static void Main(string[] args)
+        {
+            Wizard wizard1 = new Wizard("Wizard 1");
+            Ninja ninja1 = new Ninja("Ninja 1");
+            Samurai samurai1 = new Samurai("Samurai 1");
+            Console.WriteLine(wizard1.Health);
+            ninja1.Attack(wizard1);
+            ninja1.Attack(samurai1);
+            samurai1.Attack(wizard1);
+            Console.WriteLine(samurai1.Health);
+            samurai1.Meditate("Samurai 1");
+            Console.WriteLine(samurai1.Health);
+            wizard1.Heal(ninja1);
+            Console.WriteLine(ninja1.Health);
+            ninja1.Steal(wizard1);
+            Console.WriteLine(ninja1.Health);
+        }
     }
-     
-    public Human(string name)
-    {
-        Name = name;
-        Strength = 3;
-        Intelligence = 3;
-        Dexterity = 3;
-        health = 100;
-    }
-     
-    public Human(string name, int str, int intel, int dex, int hp)
-    {
-        Name = name;
-        Strength = str;
-        Intelligence = intel;
-        Dexterity = dex;
-        health = hp;
-    }
-     
-    // Build Attack method
-    public int Attack(Human target)
-    {
-        int dmg = Strength * 3;
-        target.health -= dmg;
-        Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
-        return target.health;
-    }
+
+
+
 }

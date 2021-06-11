@@ -1,0 +1,16 @@
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.csprojAssemblyReference.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.AssemblyInfoInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.AssemblyInfo.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.csproj.CoreCompileInputs.cache
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.exe
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.deps.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.runtimeconfig.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.runtimeconfig.dev.json
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\ref\WizardNinjaSamurai.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\bin\Debug\net5.0\WizardNinjaSamurai.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\ref\WizardNinjaSamurai.dll
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.pdb
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\hello.net_core\WizardNinjaSamurai\obj\Debug\net5.0\WizardNinjaSamurai.genruntimeconfig.cache
