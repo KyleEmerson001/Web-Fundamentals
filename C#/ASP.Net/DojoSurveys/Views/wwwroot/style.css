@@ -1,0 +1,10 @@
+  
+*{
+    margin: 0px;
+}
+td{
+    border: solid black 1px;
+}
+.form{ border: solid black 1px;
+    display: inline-block;
+}

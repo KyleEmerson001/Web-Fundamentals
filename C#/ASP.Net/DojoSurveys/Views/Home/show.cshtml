@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+
+        </head>
+        <body>
+<h1>Submitted Info</h1>
+<h3>Info Submitted:</h3>
+<p>Name: @Model.name</p>
+<p>Dojo: @Model.dojo</p>
+<p>Language: @Model.language</p>
+<p>Comment:@Model.comment</p>
+</body>
+
+</html>

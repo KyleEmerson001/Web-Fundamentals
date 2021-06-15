@@ -75,29 +75,21 @@ namespace Puzzels
 
             static List<string> Names()
             {
-                List<string> names = new List<string>();
-                names.Add("Todd");
-                names.Add("Tiffany");
-                names.Add("Charlie");
-                names.Add("Geneva");
-                names.Add("Sydney");
-                Console.WriteLine(names[2]);
-                return names;
-            }
-            Random rnd = new Random();
-            static void Shuffle<string>(this List<string> list)
-            {
-                int length = names.Count;
-                while (length > 1)
-                {
-                    length--;
-                    int k = rnd.Next(length + 1);
-                    T value = list[k];
-                    list[k] = list[length];
-                    list[length] = value;
+                List<string> names = new List<string>(){"Todd", "Tiffany", "Charlie", "Geneva", "Sydney"};
+                List<string> Shuffled = new List<string> ();
+                foreach (string i in names){
+                    Random rnd = new Random();
+                    Shuffled.Insert(rnd.Next(0, Shuffled.Count+1), i);
                 }
+                for (int i = 0; i<Shuffled.Count; i++){
+                    if(Shuffled[i].Length < 5){
+                        Shuffled.RemoveAt(i);
+                    }
+                }
+                return Shuffled;
             }
-            Console.WriteLine(newNames[2]);
+           
+
 
 
             Names();

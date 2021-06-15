@@ -30,7 +30,7 @@ class Wizard: Human, IDamageable
     public int Attack(IDamageable target)
     {
         int dmg = Intelligence * 5;
-        target.TakeDamage(Intelligence * 5);
+        target.TakeDamage(dmg);
         Health +=dmg;
         Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
         Console.WriteLine($"{Name} healed {Name} for {dmg} Health!");
