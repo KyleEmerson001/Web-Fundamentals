@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\hello.net_core\\DojoSurvey\\DojoSurvey.csproj",
-      "projectName": "DojoSurvey",
-      "projectPath": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\hello.net_core\\DojoSurvey\\DojoSurvey.csproj",
+      "projectUniqueName": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\ASP.Net\\DojoSurveyValidate\\DojoSurveyValidate.csproj",
+      "projectName": "DojoSurveyValidate",
+      "projectPath": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\ASP.Net\\DojoSurveyValidate\\DojoSurveyValidate.csproj",
       "packagesPath": "C:\\Users\\kylee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\hello.net_core\\DojoSurvey\\obj\\",
+      "outputPath": "C:\\Users\\kylee\\OneDrive\\Documents\\GitHub\\Web-Fundamentals\\C#\\ASP.Net\\DojoSurveyValidate\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kylee\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,6 +54,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

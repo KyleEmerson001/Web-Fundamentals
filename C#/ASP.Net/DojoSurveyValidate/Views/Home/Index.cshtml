@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dojo Survey</title>
+        <link rel="stylesheet"  href="~/styles.css">
+             @model Survey       
+        </head>
+        <body>
+
+                        <form asp-action='show' asp-controller="Home" method='POST' class = form>
+                        <span asp-validation-for="name" class="text-danger"></span>
+                        Your Name: <input asp-for ='name'><br>
+                            <label for="Dojo">Dojo Location:</label>
+                            <span asp-validation-for="dojo" class="text-danger"></span>
+                            <select asp-for="dojo" id="dojo">
+                              <option value="Bellevue">Bellevue</option>
+                              <option value="Los Angeles">Los Angeles</option>
+                              <option value="Austin">Austin</option>
+                              <option value="New York City">New York City</option>
+                            </select><br>
+                            <label for="Language">Favorite Language:</label>
+                            <span asp-validation-for="language" class="text-danger"></span>
+                            <select asp-for="language" id="language">
+                              <option value="Python">Python</option>
+                              <option value="HTML">HTML</option>
+                              <option value="CSS">CSS</option>
+                              <option value="Java Script">Java Script</option>
+                            </select><br>
+                        Comment (optional): <br><textarea rows="4" cols="50" asp-for="comment" id="comment"></textarea> <br>
+                        <span asp-validation-for="comment" class="text-danger"></span>
+                        <input type='submit' value='submit'>
+                                        </form>
+        </body>
+
+</html>

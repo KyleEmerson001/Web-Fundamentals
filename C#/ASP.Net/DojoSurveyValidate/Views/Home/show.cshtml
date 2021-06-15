@@ -5,11 +5,13 @@
         <meta charset="utf-8" />
         <title>Dojo Survey</title>
         <link rel="stylesheet"  href="~/styles.css">
-
+        @using DojoSurveyValidate.Models
+        @model Survey
         </head>
         <body>
 <h1>Submitted Info</h1>
 <h3>Info Submitted:</h3>
+
 <p>Name: @Model.name</p>
 <p>Dojo: @Model.dojo</p>
 <p>Language: @Model.language</p>

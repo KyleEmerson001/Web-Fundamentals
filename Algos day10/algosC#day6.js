@@ -84,3 +84,4 @@
   }
 
   const hum = new Stack(1,2,3,4)
+  hum.peak()
