@@ -30,15 +30,19 @@ namespace DojoSurveyValidate.Controllers
             if (ModelState.IsValid)
             {
                 Console.WriteLine("Model State is valid");
-                return RedirectToAction("show");
+                return View("show", survey);
             }
 
             Console.WriteLine("Model State INVALID");
             return View("Index");
         }
         [HttpGet("/show")]
-        public IActionResult Show(){
-            return View("Survey");
+        public IActionResult ValidateSurvey()
+        {
+            return View("show");
         }
     }
+
 }
+
+
