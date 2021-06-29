@@ -1,0 +1,40 @@
+<h1>@ViewData["Title"]</h1>
+
+<h1 class="display-4">Welcome to the Wedding Planner</h1>
+<a asp-controller="Home" asp-action="LogOut">Log Out</a>
+<a href="Weddings/New">New</a>
+
+@{
+  Wedding newWedding = new Wedding();
+}
+<partial name="_createForm" model="@newWedding"></partial>
+
+<hr>
+
+@foreach (Wedding wedding in Model)
+{
+  <div class="card shadow rounded mx-auto w-75 mb-3">
+    <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">
+      <a asp-controller="Weddings" asp-action="Details" asp-route-weddingId="@wedding.WeddingId">@wedding.WedderOne & @wedding.WedderTwo</a>
+    </h4>
+
+    <div class="card-footer text-center">
+      <form asp-controller="Weddings" asp-action="RSVP" asp-route-weddingId="@wedding.WeddingId">
+        @{
+          bool alreadyRSVPD = wedding.Guests.Any(guest => Context.Session.GetInt32("UserId") == guest.UserId);
+        }
+
+        <button class="btn btn-outline-info">
+          @if (alreadyRSVPD)
+          {
+            <span>UnRSVP</span>
+          }
+          else
+          {
+            <span>RSVP</span>
+          }
+        </button>
+      </form>
+    </div>
+  </div>
+}
