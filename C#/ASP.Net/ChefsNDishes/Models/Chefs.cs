@@ -23,7 +23,10 @@ namespace ChefsNDishes.Models
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
-        
+        public static int CountAge(DateTime BirthDate)
+        {
+            return (int)((DateTime.Today - BirthDate).Days/365.25);
+        }
  
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
