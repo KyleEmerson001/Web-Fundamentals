@@ -25,6 +25,9 @@ namespace ChefsNDishes.Controllers
         {
             List<Dish> food = db.Dishes.ToList();
             ViewBag.All = food;
+             foreach(var x in food){
+                    Chef cook = db.Chefs.SingleOrDefault(c => c.ChefId == x.ChefId);
+                }
             return View();
         }
 
@@ -44,7 +47,7 @@ namespace ChefsNDishes.Controllers
             return View("Add");
         }
 
-                [HttpGet("NewChef")]
+        [HttpGet("NewChef")]
         public IActionResult NewChef()
         {
             return View("AddChef");
@@ -62,6 +65,8 @@ namespace ChefsNDishes.Controllers
             }
             else
             {
+                List<Chef> chef = db.Chefs.ToList();
+                ViewBag.All = chef;
                 Console.WriteLine("Model is Invalid");
                 return View("Add");
             }

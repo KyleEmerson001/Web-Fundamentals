@@ -8,10 +8,6 @@ namespace ChefsNDishes.Models
       public class Dish
       {
         public int DishId { get; set; }
- 
-        [Required(ErrorMessage = "is required")]
-        [Display(Name = "Chef's Name")]
-        public string ChefName { get; set; }
         
         [Required(ErrorMessage = "is required")]
         [Display(Name = "Name of Dish")]

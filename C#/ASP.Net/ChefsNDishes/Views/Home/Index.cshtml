@@ -8,11 +8,24 @@
     <p class="display-4"><a href="/NewDish">Add a Dish!</a></p>
     <p>Yum, take a look at our tasty dishes</p>
 
-    <ul style = "list-style-type:none;">@{
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="width: 800px;">
+                <tr>
+                    <th>Name</th>
+                    <th>Chef</th>
+                    <th>Tastiness</th>
+                    <th>Calories</th>
+                </tr>   @{
                     foreach(var d in ViewBag.All)
-                    {
-                        <li><a href="View/@d.DishId">@d.DishName</a> by @d.ChefName</li>
+                    {<tr>
+                        <td>@d.DishName</td>
+                        <td>@d.Cook.FirstName @d.Cook.LastName</td>
+                        <td>@d.Tastiness</td>
+                        <td>@d.Calories</td>
+                    </tr>
                     }
                 }
-    </ul>
+            </table>
+        </div>
 </div>
