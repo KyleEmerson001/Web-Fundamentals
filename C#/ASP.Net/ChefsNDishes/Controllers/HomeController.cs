@@ -73,14 +73,6 @@ namespace ChefsNDishes.Controllers
                 return View("Add");
             }
         }
-        [HttpGet("View/{DishId}")]
-        public IActionResult ViewDish(int DishId)
-        {
-            Dish RetrievedDish = db.Dishes.FirstOrDefault(selectedDish => selectedDish.DishId == DishId);      
-            ViewBag.selectedDish = RetrievedDish;
-            return View("View");
-        }
-
         [HttpPost("createchef")]
         public IActionResult CreateChef(Chef c)
         {
