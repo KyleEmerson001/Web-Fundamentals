@@ -34,7 +34,9 @@ namespace ChefsNDishes.Controllers
          [HttpGet("/Index")]
         public IActionResult ChefsIndex()
         {
-            List<Chef> cook = db.Chefs.ToList();
+            List<Chef> cook = db.Chefs.
+            Include(d=>d.DishByChef)
+            .ToList();
             ViewBag.All = cook;
             return View("IndexChef");
         }
