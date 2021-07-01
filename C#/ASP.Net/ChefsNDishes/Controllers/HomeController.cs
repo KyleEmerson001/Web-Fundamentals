@@ -28,10 +28,24 @@ namespace ChefsNDishes.Controllers
             return View();
         }
 
+         [HttpGet("/Index")]
+        public IActionResult ChefsIndex()
+        {
+            List<Chef> cook = db.Chefs.ToList();
+            ViewBag.All = cook;
+            return View("IndexChef");
+        }
+
         [HttpGet("NewDish")]
         public IActionResult NewDish()
         {
             return View("Add");
+        }
+
+                [HttpGet("NewChef")]
+        public IActionResult NewChef()
+        {
+            return View("AddChef");
         }
 
          [HttpPost("create")]

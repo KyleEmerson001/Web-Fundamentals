@@ -2,3 +2,8 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+$(function(){
+    $('[type="date"]').prop('max', function(){
+        return new Date().toJSON().split('T')[0];
+    });
+});

@@ -18,7 +18,7 @@ namespace ChefsNDishes.Models
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "is required")]
-        [Display(Name = "Date of Birth")]
+        [Display(Name = "Birth Date")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }

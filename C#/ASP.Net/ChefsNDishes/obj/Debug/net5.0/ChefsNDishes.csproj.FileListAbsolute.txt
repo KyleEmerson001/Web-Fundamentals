@@ -32,9 +32,7 @@ C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishe
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ChefsNDishes.TagHelpers.input.cache
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ChefsNDishes.TagHelpers.output.cache
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ChefsNDishes.RazorCoreGenerate.cache
-C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Chefs\Add.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\Add.cshtml.g.cs
-C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\View.cshtml.g.cs
@@ -51,4 +49,5 @@ C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishe
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ref\ChefsNDishes.dll
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ChefsNDishes.pdb
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\ChefsNDishes.genruntimeconfig.cache
-C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Chefs\index.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\AddChef.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\ChefsNDishes\obj\Debug\net5.0\Razor\Views\Home\IndexChef.cshtml.g.cs
