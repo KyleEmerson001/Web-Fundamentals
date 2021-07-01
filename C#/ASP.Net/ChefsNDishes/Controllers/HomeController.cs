@@ -39,6 +39,8 @@ namespace ChefsNDishes.Controllers
         [HttpGet("NewDish")]
         public IActionResult NewDish()
         {
+            List<Chef> chef = db.Chefs.ToList();
+            ViewBag.All = chef;
             return View("Add");
         }
 
@@ -87,15 +89,6 @@ namespace ChefsNDishes.Controllers
                 Console.WriteLine("Model is Invalid");
                 return View("Add", "Chefs");
             }
-        }
-
-                [HttpGet("delete/{DishId}")]
-        public IActionResult DeleteDish(int DishId)
-        {
-            Dish RetrievedDish = db.Dishes.SingleOrDefault(selectedDish => selectedDish.DishId == DishId);
-            db.Dishes.Remove(RetrievedDish);
-            db.SaveChanges();
-            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

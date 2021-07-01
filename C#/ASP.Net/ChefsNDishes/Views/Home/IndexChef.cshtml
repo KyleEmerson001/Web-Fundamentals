@@ -4,6 +4,7 @@
 @model Chef;
 
 <div class="text-center">
+    <h1 class="display-4"><a href="/">Dishes</a> | Chefs</h1>
     <h1 class="display-4"><a href="/NewChef">"Add a Chef"</a></h1>
     <p>Check out our roster of Chefs!</p>
 
@@ -20,8 +21,7 @@
                     {
                         <tr>
                         <td>@c.FirstName @c.LastName</td>
-                        <td>@c.Age</td>
-                        <td>@c.DishByChef.Count</td>
+                        <td>@c.BirthDate</td>
                         </tr>
                     }
                 }
