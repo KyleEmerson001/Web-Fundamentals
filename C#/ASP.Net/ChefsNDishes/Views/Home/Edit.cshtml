@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+<div class="text-center">
+    @model Dish
+
+    <h1 class="display-4">Edit @ViewBag.selectedDish.DishName</h1>
+    <form action="updateDish/@ViewBag.selectedDish.DishId" method="post">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Chef's Name</label>
+                    <input type="text" asp-for="ChefName" class="form-control" value ="@ViewBag.selectedDish.ChefName">
+                    <span asp-validation-for="ChefName"class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Name of Dish</label>
+                    <input type="text" asp-for="DishName" class="form-control"value ="@ViewBag.selectedDish.DishName">
+                    <span asp-validation-for="DishName"class="text-danger"></span>
+                </div>
+					<div class="form-group">
+                    <label># of Calories</label>
+                    <input type="number" asp-for="Calories" class="form-control"value ="@ViewBag.selectedDish.Calories">
+                    <span asp-validation-for="Calories"class="text-danger"></span>
+                </div>				
+            </div>
+            <div class="col-sm-4">
+				 <div class="form-group">
+                    <label>Tastiness</label>
+					<select type="number" asp-for="Tastiness" class="form-control">
+						<option value="@ViewBag.selectedDish.Tastiness">@ViewBag.selectedDish.Tastiness</option>
+						<option value=1>1</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5</option>
+					</select>
+                    <span asp-validation-for="Tastiness"class="text-danger"></span>
+                </div>
+			</div>
+			<div class="col-sm-4">
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" asp-for="Description" class="form-control"value ="@ViewBag.selectedDish.Description">
+                    <span asp-validation-for="Description"class="text-danger"></span>
+					<input type="submit" value="Edit Dish" class="btn btn-outline-success">
+                </div>
+            </div>
+        </div>
+    </form>

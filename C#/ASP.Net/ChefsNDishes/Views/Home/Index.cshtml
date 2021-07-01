@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish;
+
+<div class="text-center">
+    <h1 class="display-4"><a href="/NewDish">"Add a Dish!"</a></h1>
+    <p>Yum, take a look at our tasty dishes</p>
+
+    <ul style = "list-style-type:none;">@{
+                    foreach(var d in ViewBag.All)
+                    {
+                        <li><a href="View/@d.DishId">@d.DishName</a> by @d.ChefName</li>
+                    }
+                }
+    </ul>
+</div>
