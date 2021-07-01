@@ -26,7 +26,7 @@
 <div class="text-center">
     @model Wedding
 <div>
-<h2>Date: @Model.Date</h2>
+<h2>Date: @Model.Date.Day/ @Model.Date.Month/ @Model.Date.Year</h2>
 </div>
 <h3>Guests:</h3>
     @foreach (WeddingRSVP WeddingRSVP in Model.RSVPs)
