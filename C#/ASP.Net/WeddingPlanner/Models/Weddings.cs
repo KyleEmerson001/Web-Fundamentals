@@ -24,6 +24,8 @@ namespace WeddingPlanner.Models
 
         [Required(ErrorMessage = "is required")]
         [Display(Name = "Date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
         [Required(ErrorMessage = "is required")]
@@ -37,6 +39,6 @@ namespace WeddingPlanner.Models
         public int UserId { get; set; }
         public User Author { get; set; }
 
-        public List<WeddingGuest> Guests { get; set; }
+        public List<WeddingRSVP> RSVPs { get; set; }
       }
   }

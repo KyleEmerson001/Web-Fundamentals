@@ -36,8 +36,8 @@ namespace WeddingPlanner.Controllers
             db = context;
         }
 
-        [HttpGet("/weddings")]
-        public IActionResult All()
+        [HttpGet("Wedding/Success")]
+        public IActionResult Success()
         {
             if (!isLoggedIn)
             {
@@ -45,14 +45,14 @@ namespace WeddingPlanner.Controllers
             }
 
             List<Wedding> allWeddings = db.Weddings
-                .Include(wedding => wedding.Author)
-                .Include(wedding => wedding.Guests)
+                .Include(Wedding => Wedding.Author)
+                .Include(Wedding => Wedding.RSVPs)
                 .ToList();
 
-            return View("All", allWeddings);
+            return View("Success", allWeddings);
         }
 
-        [HttpGet("/weddings/new")]
+        [HttpGet("New")]
         public IActionResult New()
         {
             if (!isLoggedIn)
@@ -63,7 +63,7 @@ namespace WeddingPlanner.Controllers
             return View("New");
         }
 
-        [HttpPost("/weddings/create")]
+        [HttpPost("/Weddings/create")]
         public IActionResult Create(Wedding newWedding)
         {
             if (!isLoggedIn)
@@ -80,123 +80,77 @@ namespace WeddingPlanner.Controllers
             newWedding.UserId = (int)uid;
             db.Weddings.Add(newWedding);
             db.SaveChanges();
-            return RedirectToAction("All");
+            return RedirectToAction("Success");
         }
 
-        [HttpGet("/weddings/{weddingId}")]
-        public IActionResult Details(int weddingId)
+        [HttpGet("/View/{WeddingId}")]
+        public IActionResult ViewWedding(int WeddingId)
         {
             if (!isLoggedIn)
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            Wedding wedding = db.Weddings
-            .Include(wedding => wedding.Author)
-            .Include(wedding => wedding.Guests)
-            .ThenInclude(guest => guest.User)
-            .FirstOrDefault(p => p.WeddingId == weddingId);
+            Wedding Wedding = db.Weddings
+            .Include(Wedding => Wedding.Author)
+            .Include(Wedding => Wedding.RSVPs)
+            .ThenInclude(RSVP => RSVP.User)
+            .FirstOrDefault(p => p.WeddingId == WeddingId);
 
-            if (wedding == null)
+            if (Wedding == null)
             {
-                return RedirectToAction("All");
+                return RedirectToAction("Success");
             }
 
-            return View("Details", wedding);
+            return View("View", Wedding);
         }
 
-        [HttpPost("/weddings/{weddingId}")]
-        public IActionResult Delete(int weddingId)
+        [HttpPost("/Weddings/{WeddingId}")]
+        public IActionResult Delete(int WeddingId)
         {
-            Wedding wedding = db.Weddings.FirstOrDefault(p => p.WeddingId == weddingId);
+            Wedding Wedding = db.Weddings.FirstOrDefault(p => p.WeddingId == WeddingId);
 
             // If post doesn't exist or not author, redirect away.
-            if (wedding == null || wedding.UserId != uid)
+            if (Wedding == null || Wedding.UserId != uid)
             {
-                return RedirectToAction("All");
+                return RedirectToAction("Success");
             }
 
-            db.Weddings.Remove(wedding);
+            db.Weddings.Remove(Wedding);
             db.SaveChanges();
 
-            return RedirectToAction("All");
+            return RedirectToAction("Success");
         }
 
-        [HttpGet("/weddings/{weddingId}/edit")]
-        public IActionResult Edit(int weddingId)
+        
+        [HttpPost("/Weddings/{WeddingId}/RSVP")]
+        public IActionResult RSVP(int WeddingId)
         {
             if (!isLoggedIn)
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            Wedding wedding = db.Weddings.FirstOrDefault(p => p.WeddingId == weddingId);
+            WeddingRSVP existingRSVP = db.WeddingRSVPs
+                .FirstOrDefault(RSVP => RSVP.WeddingId == WeddingId && (int)uid == RSVP.UserId);
 
-            // If post doesn't exist or not author, redirect away.
-            if (wedding == null || wedding.UserId != uid)
+            if (existingRSVP == null)
             {
-                return RedirectToAction("All");
-            }
-
-            return View("Edit", wedding);
-        }
-
-        [HttpPost("/weddings/{weddingId}/update")]
-        public IActionResult Update(int weddingId, Wedding editedWedding)
-        {
-            if (ModelState.IsValid == false)
-            {
-                editedWedding.WeddingId = weddingId;
-                return View("Edit", editedWedding);
-            }
-
-            Wedding dbWedding = db.Weddings.FirstOrDefault(p => p.WeddingId == weddingId);
-
-            if (dbWedding == null)
-            {
-                return RedirectToAction("All");
-            }
-
-            dbWedding.WedderOne = editedWedding.WedderOne;
-            dbWedding.WedderTwo = editedWedding.WedderTwo;
-            dbWedding.Date = editedWedding.Date;
-            dbWedding.Address = editedWedding.Address;
-
-            db.Weddings.Update(dbWedding);
-            db.SaveChanges();
-
-            // Dict matches Details params     new { paramName = paramValue }
-            return RedirectToAction("Details", new { weddingId = dbWedding.WeddingId });
-        }
-
-        [HttpPost("/weddings/{weddingId}/guest")]
-        public IActionResult RSVP(int weddingId)
-        {
-            if (!isLoggedIn)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
-            WeddingGuest existingGuest = db.WeddingGuests
-                .FirstOrDefault(guest => guest.WeddingId == weddingId && (int)uid == guest.UserId);
-
-            if (existingGuest == null)
-            {
-                WeddingGuest guest = new WeddingGuest()
+                WeddingRSVP RSVP = new WeddingRSVP()
                 {
-                    WeddingId = weddingId,
+                    WeddingId = WeddingId,
                     UserId = (int)uid
                 };
 
-                db.WeddingGuests.Add(guest);
+                db.WeddingRSVPs.Add(RSVP);
             }
             else
             {
-                db.WeddingGuests.Remove(existingGuest);
+                db.WeddingRSVPs.Remove(existingRSVP);
             }
 
             db.SaveChanges();
-            return RedirectToAction("All");
+            return RedirectToAction("Success");
         }
     }
 }

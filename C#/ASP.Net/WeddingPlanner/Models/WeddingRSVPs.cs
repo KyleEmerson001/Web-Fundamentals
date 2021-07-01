@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WeddingPlanner.Models
 {
-    public class WeddingGuest 
+    public class WeddingRSVP 
     {
         [Key]
-        public int WeddingGuestId { get; set; }
+        public int WeddingRSVPId { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 

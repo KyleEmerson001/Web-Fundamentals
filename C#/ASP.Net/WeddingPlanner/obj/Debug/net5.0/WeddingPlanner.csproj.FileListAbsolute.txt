@@ -13,7 +13,6 @@ C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlan
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\WeddingPlanner.TagHelpers.output.cache
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\WeddingPlanner.RazorCoreGenerate.cache
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\Success.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -50,3 +49,8 @@ C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlan
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\_Login.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\_Register.cshtml.g.cs
 C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Weddings\New.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\_createForm.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Home\New.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Weddings\Success.cshtml.g.cs
+C:\Users\kylee\OneDrive\Documents\GitHub\Web-Fundamentals\C#\ASP.Net\WeddingPlanner\obj\Debug\net5.0\Razor\Views\Weddings\View.cshtml.g.cs

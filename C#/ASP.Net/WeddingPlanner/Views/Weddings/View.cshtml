@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@Model.WedderOne and @Model.WedderTwo's Wedding</a></h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+
+<a class="nav-link text-dark" asp-area="" asp-controller="Wedding" asp-action="Success">Dashboard</a>
+                                <form asp-controller="Home" asp-action="Logout" method="POST">
+                                    <button class="btn btn-link">Log Out</button>
+                                </form>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div class="text-center">
+    @model Wedding
+<div>
+  <h2 class="text-center">View Activity</h2>
+
+
+<h2>Date: @Model.Date</h2>
+</div>
+<h3>Guests:</h3>
+    @foreach (WeddingRSVP WeddingRSVP in Model.RSVPs)
+    {
+      <span>@WeddingRSVP.User.FullName(), </span>
+    }
+    
+
+        </div>

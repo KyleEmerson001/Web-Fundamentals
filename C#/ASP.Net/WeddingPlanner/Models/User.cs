@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WeddingPlanner.Models
 {
@@ -22,6 +23,7 @@ namespace WeddingPlanner.Models
         public string LastName { get; set; }
 
         [Required(ErrorMessage="is required.")]
+        [Remote("EmailExists", "Account", HttpMethod = "POST", ErrorMessage = "Email address already registered.")]
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage="Invalid email address.")]
         public string Email { get; set; }
 
@@ -30,6 +32,7 @@ namespace WeddingPlanner.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        [NotMapped]
         [Required(ErrorMessage = "is required")]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "must match Password")]
@@ -43,6 +46,6 @@ namespace WeddingPlanner.Models
 
         public List<Wedding> Weddings { get; set; }
 
-        public List<WeddingGuest> Guests { get; set; }
+        public List<WeddingRSVP> RSVPs { get; set; }
     }
 }

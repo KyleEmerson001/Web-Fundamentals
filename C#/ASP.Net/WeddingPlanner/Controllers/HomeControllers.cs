@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WeddingPlanner.Models;
@@ -66,15 +67,16 @@ namespace WeddingPlanner.Controllers
             db.SaveChanges();
 
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
+            HttpContext.Session.SetString("FullName", newUser.FullName());
 
-            return RedirectToAction("Success");
+            return RedirectToAction("Success", "Wedding");
         }
         [HttpPost("/login")]
         public IActionResult Login(LoginUser loginUser)
         {
             if (ModelState.IsValid == false)
             {
-                return View("Login");
+                return View("Index");
             }
 
             User dbUser = db.Users.FirstOrDefault(user => user.Email == loginUser.LoginEmail);
@@ -82,7 +84,7 @@ namespace WeddingPlanner.Controllers
             if (dbUser == null)
             {
                 ModelState.AddModelError("LoginEmail", "email not found.");
-                return View("Login");
+                return View("Index");
             }
 
             PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
@@ -92,25 +94,35 @@ namespace WeddingPlanner.Controllers
             if (pwCompareResult == 0)
             {
                 ModelState.AddModelError("LoginEmail", "incorrect credentials.");
-                return View("Login");
+                return View("Index");
             }
 
             HttpContext.Session.SetInt32("UserId", dbUser.UserId);
+            HttpContext.Session.SetString("FullName", dbUser.FullName());
 
-            return RedirectToAction("Success");
+            return RedirectToAction("Success", "Wedding");
         }
 
-        
-        public IActionResult Success()
-        {
-            return View();
-        }
-
-        [HttpGet("/Logout")]
+        [HttpPost("/logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index");
+        }
+
+        [HttpGet("/users/{userId}")]
+        public IActionResult Details(int userId)
+        {
+            User user = db.Users
+                .Include(u => u.Weddings)
+                .FirstOrDefault(u => u.UserId == userId);
+
+            if (user == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View("Details", user);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
