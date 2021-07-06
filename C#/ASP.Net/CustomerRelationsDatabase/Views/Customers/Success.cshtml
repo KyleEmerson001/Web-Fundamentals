@@ -3,9 +3,9 @@
 }
 @model List<Customer>;
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Welcome to the Customer Planner</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Welcome to the Customer Relations Management System</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,9 +29,10 @@
             <table class="table table-striped table-bordered" style="width: 850px;">
       <thead>
         <th>Customer</th>
-        <th>Date</th>
+        <th>First Call</th>
+        <th>Email Address</th>
         <th>Address</th>
-        <th>Guests</th>
+        <th>Attempted Call Backs</th>
         <th>Action</th>
       </thead>
       @foreach (Customer Customer in Model)
@@ -40,8 +41,9 @@
         @{
 
           <tr>
-            <td><a href= "/view/@Customer.CustomerId">@Customer.WedderOne & @Customer.WedderTwo</a></td>
-            <td>@Customer.Date.Day/ @Customer.Date.Month/ @Customer.Date.Year</td>
+            <td>@Customer.FirstName @Customer.LastName</td>
+            <td>@Customer.CreatedAt.Year</td>
+            <td>@Customer.Email</td>
             <td>@Customer.Address</td>
             <td>@Customer.Calls.Count</td>
             <td>
@@ -69,6 +71,7 @@
             <button class="btn btn-outline-danger">Delete</button>
             </form>
     }
+    <button class="btn btn-outline-primary"><a href="/NewCall/@Customer.CustomerId">New Call</a></button>
             </td>
           </tr>
     

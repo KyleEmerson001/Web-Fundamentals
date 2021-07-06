@@ -2,9 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
             <div class="container">
-                <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@Model.FistName @Model.LastName's Customer</a></h1>
+                <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@Model.User.FullName()' Call</a></h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,5 @@
         </nav>
     </header>
 
-<div class="text-center">
-    @model Customer
-<div>
-<h2>Date: @Model.Date.Day/ @Model.Date.Month/ @Model.Date.Year</h2>
-</div>
-<h3>Guests:</h3>
-    @foreach (CustomerCall CustomerCall in Model.Calls)
-    {
-      <span>@CustomerCall.User.FullName(), </span>
-    }
-    
 
         </div>

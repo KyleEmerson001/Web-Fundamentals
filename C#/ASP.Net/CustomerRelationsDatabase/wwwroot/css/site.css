@@ -1,7 +1,14 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+body{
+  background-image: linear-gradient(to right, lightblue, White);
+  color: Black;
+}
+
+
 a.navbar-brand {
+  color: white;
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -68,4 +75,8 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+.header{
+  background-image: linear-gradient(to right, lightblue, White);
+  color: Black;
 }
