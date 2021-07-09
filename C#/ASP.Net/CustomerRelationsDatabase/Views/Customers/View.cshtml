@@ -23,5 +23,16 @@
         </nav>
     </header>
 
+<div class="text-center">
+    @model List<CustomerCall>;
+        <p>@Model.IssueReported</p>
+        <p>@Model.IssueDescription</p>
+
+<p>Representatives who have spoken with Customer:</p>
+    @foreach (CustomerCall CustomerCall in Model)
+    {
+      <span>@CustomerCall.User.FullName(), Called: @Model.UpdatedAt</span>
+    }
+    
 
         </div>
