@@ -3,10 +3,9 @@ const cors = require("cors");
 
 
 const port = 5000;
-const db_name = "jokes_api";
  
 // Immediately execute the import mongoose.config.js function.
-require("./config/mongoose.config")(db_name);
+require("./config/mongoose.config");
  
 const app = express();
  

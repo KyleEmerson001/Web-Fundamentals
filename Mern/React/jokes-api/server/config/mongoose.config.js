@@ -1,16 +1,12 @@
 const mongoose = require("mongoose");
 
-module.exports = (db_name) => {
-  mongoose
-    .connect(`mongodb://localhost/${db_name}`, {
+
+  mongoose.connect(`mongodb://localhost/jokes_api`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false,
     })
-    .then(() => {
-      console.log(`Successfully connected to ${db_name}`);
-    })
-    .catch((err) => {
-      console.log(`mongoose connection to ${db_name} failed:`, err);
-    });
-};
+    .then(() => 
+      console.log(`Successfully connected to jokes_api`))
+    .catch(() => 
+      console.log(`mongoose connection to jokes_api failed:`, err))
+
