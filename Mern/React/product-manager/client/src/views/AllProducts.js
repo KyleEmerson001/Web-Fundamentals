@@ -48,9 +48,8 @@ return (
             <h4>
               <Link to={"/products/" + prod._id}>{prod.location}</Link>
             </h4>
-            <p>{prod.title}</p>
-            <p>{prod.price}</p>
-            <p>{prod.description}</p>
+            <p><Link to={`/products/${prod._id}`}>{prod.title}</Link></p>
+
 
             <div>
               <button
