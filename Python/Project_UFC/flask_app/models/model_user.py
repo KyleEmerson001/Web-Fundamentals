@@ -11,12 +11,13 @@ class User:
 # C
     @classmethod
     def new(cls, info):
-        query = 'INSERT INTO users (first_name, last_name, email, pw) VALUES (%(first_name)s,%(last_name)s,%(email)s,%(pw_hash)s);'
+        query = 'INSERT INTO users (first_name, last_name, email, pw, money) VALUES (%(first_name)s,%(last_name)s,%(email)s,%(pw_hash)s,%(money)s);'
         data = {
             "first_name": info['first_name'],
             "last_name": info['last_name'],
             "email": info['email'],
             "pw_hash": info['pw_hash'],
+            "money": 100,
         }
         new_users_id = connectToMySQL(db).query_db(query, data)
 
